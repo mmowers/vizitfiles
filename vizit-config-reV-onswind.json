@@ -1,0 +1,383 @@
+{
+  "fileNames": [
+    "1 file"
+  ],
+  "dashboards": [
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "bar",
+              "agg": "sum",
+              "name": "nrel_region",
+              "y": "capacity"
+            },
+            {
+              "dataSource": "1 file",
+              "type": "dot",
+              "agg": "sum",
+              "name": "country",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "Plot Title": "Capacity by region"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "bar",
+              "agg": "sum",
+              "x": "state",
+              "name": "nrel_region",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "Plot Width (px)": "800",
+            "Plot Title": "Capacity by state",
+            "X Tick Font Size (pt)": "10"
+          }
+        }
+      ],
+      "title": "Capacity (MW) by region",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "capacity",
+              "text": "capacity",
+              "marker_size": "capacity",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Plot Title": "Capacity (MW) by site",
+            "Dot Size (px)": "3"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "histogram",
+              "agg": "none",
+              "x": "capacity"
+            }
+          ],
+          "style": {
+            "Plot Title": "Capacity (MW) histogram",
+            "Histogram size of each bin": "5"
+          }
+        }
+      ],
+      "title": "Capacity (MW) by site",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/area squares map (mapbox)",
+              "text": "area_sq_km",
+              "lat": "latitude",
+              "lon": "longitude",
+              "area": "area_sq_km"
+            }
+          ],
+          "style": {
+            "Plot Title": "Site footprint"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "histogram",
+              "x": "area_sq_km"
+            }
+          ],
+          "style": {
+            "Histogram size of each bin": "1",
+            "X Min": "0",
+            "X Max": "100",
+            "Plot Title": "Area (sq. km) histogram"
+          }
+        }
+      ],
+      "title": "Area (sq. km) by site",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "mean_cf",
+              "marker_size": "capacity",
+              "lat": "latitude",
+              "lon": "longitude",
+              "text": "mean_cf"
+            }
+          ],
+          "style": {
+            "Plot Title": "Mean capacity factor",
+            "Dot Size (px)": "3",
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "1"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "mean_cf",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "Plot Title": "Capacity factor histogram",
+            "X Min": "0",
+            "X Max": "1",
+            "Histogram size of each bin": ".01"
+          }
+        }
+      ],
+      "title": "Capacity factor by site",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "total_lcoe",
+              "marker_size": "capacity",
+              "text": "total_lcoe",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "100",
+            "Dot Size (px)": "3",
+            "Plot Title": "Total LCOE ($/MWh)"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "name": "country",
+              "x": "total_lcoe",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "X Min": "0",
+            "X Max": "100",
+            "Plot Title": "Total LCOE histogram",
+            "Histogram size of each bin": "1"
+          }
+        }
+      ],
+      "title": "Total LCOE ($/MWh) by site",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "eos_mult",
+              "text": "eos_mult",
+              "marker_size": "capacity",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Dot Size (px)": "3",
+            "Plot Title": "EOS Mult",
+            "Colorscale Min (marker)": "1",
+            "Colorscale Max (marker)": "1.1"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "eos_mult",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "Plot Title": "EOS mult histogram",
+            "Histogram size of each bin": ".01"
+          }
+        }
+      ],
+      "title": "Economies of scale mult by site",
+      "description": ""
+    },
+    {
+      "charts": [
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "marker_color": "lcot",
+              "marker_size": "capacity",
+              "text": "lcot",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "50",
+            "Plot Title": "LCOT ($/MWh)",
+            "Dot Size (px)": "3"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "x": "lcot",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "X Min": "0",
+            "X Max": "50",
+            "Plot Title": "LCOT histogram"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "trans_cap_cost_per_mw",
+              "text": "trans_cap_cost_per_mw",
+              "marker_size": "capacity",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "5e5",
+            "Dot Size (px)": "3",
+            "Plot Title": "Spurline cost ($/MW)"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "trans_cap_cost_per_mw",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "X Min": "0",
+            "X Max": "3e6",
+            "Histogram size of each bin": "5e4",
+            "Plot Title": "Spurline cost histogram"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "reinforcement_cost_per_mw",
+              "text": "reinforcement_cost_per_mw",
+              "marker_size": "capacity",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "5e5",
+            "Plot Title": "Network reinforcement cost ($/MW)",
+            "Dot Size (px)": "3"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "reinforcement_cost_per_mw",
+              "y": "capacity"
+            }
+          ],
+          "style": {
+            "X Min": "0",
+            "X Max": "3e6",
+            "Plot Title": "Reinforcement cost histogram",
+            "Histogram size of each bin": "5e4"
+          }
+        }
+      ],
+      "title": "Trans cost by site",
+      "description": ""
+    }
+  ],
+  "include_cols": [
+    "nrel_region",
+    "area_sq_km",
+    "capacity",
+    "country",
+    "state",
+    "latitude",
+    "longitude",
+    "total_lcoe",
+    "lcot",
+    "eos_mult",
+    "trans_cap_cost_per_mw",
+    "reinforcement_cost_per_mw",
+    "mean_cf",
+    "filename"
+  ]
+}
