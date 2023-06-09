@@ -12,14 +12,14 @@
               "type": "bar",
               "agg": "sum",
               "name": "nrel_region",
-              "y": "capacity"
+              "y": "capacity_mw"
             },
             {
               "dataSource": "1 file",
               "type": "dot",
               "agg": "sum",
               "name": "country",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -34,7 +34,7 @@
               "agg": "sum",
               "x": "state",
               "name": "nrel_region",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -55,9 +55,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "capacity",
-              "text": "capacity",
-              "marker_size": "capacity",
+              "marker_color": "capacity_mw",
+              "text": "capacity_mw",
+              "marker_size": "capacity_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -73,7 +73,7 @@
               "dataSource": "1 file",
               "type": "histogram",
               "agg": "none",
-              "x": "capacity"
+              "x": "capacity_mw"
             }
           ],
           "style": {
@@ -130,7 +130,7 @@
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
               "marker_color": "mean_cf",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "lat": "latitude",
               "lon": "longitude",
               "text": "mean_cf"
@@ -150,7 +150,7 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "mean_cf",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -173,7 +173,7 @@
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
               "marker_color": "total_lcoe",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "text": "total_lcoe",
               "lat": "latitude",
               "lon": "longitude"
@@ -194,7 +194,7 @@
               "agg": "none",
               "name": "country",
               "x": "total_lcoe",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -218,7 +218,7 @@
               "agg": "none",
               "marker_color": "eos_mult",
               "text": "eos_mult",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -237,7 +237,7 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "eos_mult",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -257,7 +257,7 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "marker_color": "lcot",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "text": "lcot",
               "lat": "latitude",
               "lon": "longitude"
@@ -276,7 +276,7 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "x": "lcot",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -293,7 +293,7 @@
               "agg": "none",
               "marker_color": "trans_cap_cost_per_mw",
               "text": "trans_cap_cost_per_mw",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -312,7 +312,7 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "trans_cap_cost_per_mw",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -330,7 +330,7 @@
               "agg": "none",
               "marker_color": "reinforcement_cost_per_mw",
               "text": "reinforcement_cost_per_mw",
-              "marker_size": "capacity",
+              "marker_size": "capacity_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -349,7 +349,7 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "reinforcement_cost_per_mw",
-              "y": "capacity"
+              "y": "capacity_mw"
             }
           ],
           "style": {
@@ -367,7 +367,7 @@
   "include_cols": [
     "nrel_region",
     "area_sq_km",
-    "capacity",
+    "capacity_mw",
     "country",
     "state",
     "latitude",
