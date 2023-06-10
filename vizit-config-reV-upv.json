@@ -250,9 +250,42 @@
             "Plot Title": "EOS mult histogram",
             "Histogram size of each bin": ".01"
           }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "reg_mult",
+              "text": "reg_mult",
+              "marker_size": "capacity_mw_dc",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Dot Size (px)": "3",
+            "Plot Title": "Reg Mult"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "reg_mult",
+              "y": "capacity_mw_dc"
+            }
+          ],
+          "style": {
+            "Plot Title": "Reg mult histogram",
+            "Histogram size of each bin": ".01"
+          }
         }
       ],
-      "title": "Economies of scale mult by site",
+      "title": "Economies of scale and region multipliers by site",
       "description": ""
     },
     {
@@ -399,6 +432,7 @@
     "total_lcoe",
     "lcot",
     "eos_mult",
+    "reg_mult",
     "trans_cap_cost_per_mw_ac",
     "reinforcement_cost_per_mw_ac",
     "mean_cf_ac",
