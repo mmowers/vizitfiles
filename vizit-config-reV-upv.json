@@ -113,7 +113,7 @@
           "style": {
             "Histogram size of each bin": "1",
             "X Min": "0",
-            "X Max": "100",
+            "X Max": "150",
             "Plot Title": "Area (sq. km) histogram"
           }
         }
@@ -194,7 +194,13 @@
               "agg": "none",
               "name": "country",
               "x": "total_lcoe",
-              "y": "capacity_mw_dc"
+              "y": "capacity_mw_dc",
+              "filter": {
+                "total_lcoe": {
+                  "filter_type": "less",
+                  "filter_val": "500"
+                }
+              }
             }
           ],
           "style": {
@@ -276,7 +282,13 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "x": "lcot",
-              "y": "capacity_mw_dc"
+              "y": "capacity_mw_dc",
+              "filter": {
+                "lcot": {
+                  "filter_type": "less",
+                  "filter_val": "300"
+                }
+              }
             }
           ],
           "style": {
@@ -312,7 +324,13 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "trans_cap_cost_per_mw_ac",
-              "y": "capacity_mw_dc"
+              "y": "capacity_mw_dc",
+              "filter": {
+                "trans_cap_cost_per_mw_ac": {
+                  "filter_type": "less",
+                  "filter_val": "10e6"
+                }
+              }
             }
           ],
           "style": {
@@ -349,7 +367,13 @@
               "type": "weighted histogram",
               "agg": "none",
               "x": "reinforcement_cost_per_mw_ac",
-              "y": "capacity_mw_dc"
+              "y": "capacity_mw_dc",
+              "filter": {
+                "reinforcement_cost_per_mw_ac": {
+                  "filter_type": "less",
+                  "filter_val": "10e6"
+                }
+              }
             }
           ],
           "style": {
