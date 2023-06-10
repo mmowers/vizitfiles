@@ -129,11 +129,11 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "mean_cf",
+              "marker_color": "mean_cf_ac",
               "marker_size": "capacity_mw_dc",
               "lat": "latitude",
               "lon": "longitude",
-              "text": "mean_cf"
+              "text": "mean_cf_ac"
             }
           ],
           "style": {
@@ -149,7 +149,7 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "mean_cf",
+              "x": "mean_cf_ac",
               "y": "capacity_mw_dc"
             }
           ],
@@ -291,8 +291,8 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "trans_cap_cost_per_mw",
-              "text": "trans_cap_cost_per_mw",
+              "marker_color": "trans_cap_cost_per_mw_ac",
+              "text": "trans_cap_cost_per_mw_ac",
               "marker_size": "capacity_mw_dc",
               "lat": "latitude",
               "lon": "longitude"
@@ -311,7 +311,7 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "trans_cap_cost_per_mw",
+              "x": "trans_cap_cost_per_mw_ac",
               "y": "capacity_mw_dc"
             }
           ],
@@ -328,8 +328,8 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "reinforcement_cost_per_mw",
-              "text": "reinforcement_cost_per_mw",
+              "marker_color": "reinforcement_cost_per_mw_ac",
+              "text": "reinforcement_cost_per_mw_ac",
               "marker_size": "capacity_mw_dc",
               "lat": "latitude",
               "lon": "longitude"
@@ -348,7 +348,7 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "reinforcement_cost_per_mw",
+              "x": "reinforcement_cost_per_mw_ac",
               "y": "capacity_mw_dc"
             }
           ],
@@ -375,9 +375,9 @@
     "total_lcoe",
     "lcot",
     "eos_mult",
-    "trans_cap_cost_per_mw",
-    "reinforcement_cost_per_mw",
-    "mean_cf",
+    "trans_cap_cost_per_mw_ac",
+    "reinforcement_cost_per_mw_ac",
+    "mean_cf_ac",
     "filename"
   ]
 }
