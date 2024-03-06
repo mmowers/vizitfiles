@@ -64,7 +64,7 @@
           ],
           "style": {
             "Plot Title": "Capacity (MW) by site",
-            "Dot Size (px)": "3"
+            "Marker Size (px)": "3"
           }
         },
         {
@@ -138,7 +138,7 @@
           ],
           "style": {
             "Plot Title": "Mean capacity factor",
-            "Dot Size (px)": "3",
+            "Marker Size (px)": "3",
             "Colorscale Min (marker)": "0",
             "Colorscale Max (marker)": "1"
           }
@@ -182,7 +182,7 @@
           "style": {
             "Colorscale Min (marker)": "0",
             "Colorscale Max (marker)": "100",
-            "Dot Size (px)": "3",
+            "Marker Size (px)": "3",
             "Plot Title": "Total LCOE ($/MWh)"
           }
         },
@@ -224,7 +224,7 @@
             }
           ],
           "style": {
-            "Dot Size (px)": "3",
+            "Marker Size (px)": "3",
             "Plot Title": "EOS Mult",
             "Colorscale Min (marker)": "1",
             "Colorscale Max (marker)": "1.1"
@@ -259,7 +259,7 @@
             }
           ],
           "style": {
-            "Dot Size (px)": "3",
+            "Marker Size (px)": "3",
             "Plot Title": "Reg Mult"
           }
         },
@@ -300,7 +300,7 @@
             "Colorscale Min (marker)": "0",
             "Colorscale Max (marker)": "50",
             "Plot Title": "LCOT ($/MWh)",
-            "Dot Size (px)": "3"
+            "Marker Size (px)": "3"
           }
         },
         {
@@ -334,7 +334,7 @@
           "style": {
             "Colorscale Min (marker)": "0",
             "Colorscale Max (marker)": "5e5",
-            "Dot Size (px)": "3",
+            "Marker Size (px)": "3",
             "Plot Title": "Spurline cost ($/MW)"
           }
         },
@@ -372,7 +372,7 @@
             "Colorscale Min (marker)": "0",
             "Colorscale Max (marker)": "5e5",
             "Plot Title": "Network reinforcement cost ($/MW)",
-            "Dot Size (px)": "3"
+            "Marker Size (px)": "3"
           }
         },
         {
