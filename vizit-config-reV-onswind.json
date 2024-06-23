@@ -104,7 +104,7 @@
             }
           ],
           "style": {
-            "Histogram size of each bin": "1",
+            "Histogram size of each bin": "2",
             "X Min": "0",
             "X Max": "100",
             "Plot Title": "Area (sq. km) histogram"
@@ -150,7 +150,7 @@
             "Plot Title": "Capacity factor histogram",
             "X Min": "0",
             "X Max": "1",
-            "Histogram size of each bin": ".01"
+            "Histogram size of each bin": ".02"
           }
         }
       ],
@@ -185,7 +185,6 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "name": "country",
               "x": "lcoe_all_in_usd_per_mwh",
               "y": "capacity_ac_mw"
             }
@@ -194,7 +193,7 @@
             "X Min": "0",
             "X Max": "100",
             "Plot Title": "Total LCOE histogram",
-            "Histogram size of each bin": "1"
+            "Histogram size of each bin": "2"
           }
         }
       ],
@@ -308,6 +307,7 @@
           "style": {
             "X Min": "0",
             "X Max": "50",
+            "Histogram size of each bin": "2",
             "Plot Title": "LCOT histogram"
           }
         },
@@ -343,8 +343,8 @@
           ],
           "style": {
             "X Min": "0",
-            "X Max": "3e6",
-            "Histogram size of each bin": "5e4",
+            "X Max": "2e6",
+            "Histogram size of each bin": "1e5",
             "Plot Title": "Spurline cost histogram"
           }
         },
@@ -380,8 +380,8 @@
           ],
           "style": {
             "X Min": "0",
-            "X Max": "3e6",
-            "Histogram size of each bin": "5e4",
+            "X Max": "1e5",
+            "Histogram size of each bin": "1e4",
             "Plot Title": "POI cost histogram"
           }
         },
@@ -417,9 +417,9 @@
           ],
           "style": {
             "X Min": "0",
-            "X Max": "3e6",
+            "X Max": "2e6",
             "Plot Title": "Reinforcement cost histogram",
-            "Histogram size of each bin": "5e4"
+            "Histogram size of each bin": "1e5"
           }
         }
       ],
