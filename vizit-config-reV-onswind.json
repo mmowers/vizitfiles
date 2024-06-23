@@ -11,15 +11,8 @@
               "dataSource": "1 file",
               "type": "bar",
               "agg": "sum",
-              "name": "nrel_region",
-              "y": "capacity_mw"
-            },
-            {
-              "dataSource": "1 file",
-              "type": "dot",
-              "agg": "sum",
               "name": "country",
-              "y": "capacity_mw"
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -33,8 +26,8 @@
               "type": "bar",
               "agg": "sum",
               "x": "state",
-              "name": "nrel_region",
-              "y": "capacity_mw"
+              "name": "country",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -55,9 +48,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "capacity_mw",
-              "text": "capacity_mw",
-              "marker_size": "capacity_mw",
+              "marker_color": "capacity_ac_mw",
+              "text": "capacity_ac_mw",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -73,7 +66,7 @@
               "dataSource": "1 file",
               "type": "histogram",
               "agg": "none",
-              "x": "capacity_mw"
+              "x": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -92,10 +85,10 @@
             {
               "dataSource": "1 file",
               "type": "lat/lon/area squares map (mapbox)",
-              "text": "area_sq_km",
+              "text": "area_developable_sq_km",
               "lat": "latitude",
               "lon": "longitude",
-              "area": "area_sq_km"
+              "area": "area_developable_sq_km"
             }
           ],
           "style": {
@@ -107,7 +100,7 @@
             {
               "dataSource": "1 file",
               "type": "histogram",
-              "x": "area_sq_km"
+              "x": "area_developable_sq_km"
             }
           ],
           "style": {
@@ -129,11 +122,11 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "mean_cf",
-              "marker_size": "capacity_mw",
+              "marker_color": "capacity_factor_ac",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude",
-              "text": "mean_cf"
+              "text": "capacity_factor_ac"
             }
           ],
           "style": {
@@ -149,8 +142,8 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "mean_cf",
-              "y": "capacity_mw"
+              "x": "capacity_factor_ac",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -172,9 +165,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "total_lcoe",
-              "marker_size": "capacity_mw",
-              "text": "total_lcoe",
+              "marker_color": "lcoe_all_in_usd_per_mwh",
+              "marker_size": "capacity_ac_mw",
+              "text": "lcoe_all_in_usd_per_mwh",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -193,8 +186,8 @@
               "type": "weighted histogram",
               "agg": "none",
               "name": "country",
-              "x": "total_lcoe",
-              "y": "capacity_mw"
+              "x": "lcoe_all_in_usd_per_mwh",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -216,9 +209,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "eos_mult",
-              "text": "eos_mult",
-              "marker_size": "capacity_mw",
+              "marker_color": "multiplier_cc_eos",
+              "text": "multiplier_cc_eos",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -236,8 +229,8 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "eos_mult",
-              "y": "capacity_mw"
+              "x": "multiplier_cc_eos",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -251,9 +244,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "reg_mult",
-              "text": "reg_mult",
-              "marker_size": "capacity_mw",
+              "marker_color": "multiplier_cc_regional",
+              "text": "multiplier_cc_regional",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -269,8 +262,8 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "reg_mult",
-              "y": "capacity_mw"
+              "x": "multiplier_cc_regional",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -289,9 +282,9 @@
             {
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
-              "marker_color": "lcot",
-              "marker_size": "capacity_mw",
-              "text": "lcot",
+              "marker_color": "lcot_usd_per_mwh",
+              "marker_size": "capacity_ac_mw",
+              "text": "lcot_usd_per_mwh",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -308,8 +301,8 @@
             {
               "dataSource": "1 file",
               "type": "weighted histogram",
-              "x": "lcot",
-              "y": "capacity_mw"
+              "x": "lcot_usd_per_mwh",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -324,9 +317,9 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "trans_cap_cost_per_mw",
-              "text": "trans_cap_cost_per_mw",
-              "marker_size": "capacity_mw",
+              "marker_color": "cost_spur_usd_per_mw",
+              "text": "cost_spur_usd_per_mw",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -344,8 +337,8 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "trans_cap_cost_per_mw",
-              "y": "capacity_mw"
+              "x": "cost_spur_usd_per_mw",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -361,9 +354,46 @@
               "dataSource": "1 file",
               "type": "lat/lon/size dot map (continuous color) (mapbox)",
               "agg": "none",
-              "marker_color": "reinforcement_cost_per_mw",
-              "text": "reinforcement_cost_per_mw",
-              "marker_size": "capacity_mw",
+              "marker_color": "cost_poi_usd_per_mw",
+              "text": "cost_poi_usd_per_mw",
+              "marker_size": "capacity_ac_mw",
+              "lat": "latitude",
+              "lon": "longitude"
+            }
+          ],
+          "style": {
+            "Colorscale Min (marker)": "0",
+            "Colorscale Max (marker)": "5e5",
+            "Marker Size (px)": "3",
+            "Plot Title": "POI cost ($/MW)"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "weighted histogram",
+              "agg": "none",
+              "x": "cost_poi_usd_per_mw",
+              "y": "capacity_ac_mw"
+            }
+          ],
+          "style": {
+            "X Min": "0",
+            "X Max": "3e6",
+            "Histogram size of each bin": "5e4",
+            "Plot Title": "POI cost histogram"
+          }
+        },
+        {
+          "traces": [
+            {
+              "dataSource": "1 file",
+              "type": "lat/lon/size dot map (continuous color) (mapbox)",
+              "agg": "none",
+              "marker_color": "cost_reinforcement_usd_per_mw",
+              "text": "cost_reinforcement_usd_per_mw",
+              "marker_size": "capacity_ac_mw",
               "lat": "latitude",
               "lon": "longitude"
             }
@@ -381,8 +411,8 @@
               "dataSource": "1 file",
               "type": "weighted histogram",
               "agg": "none",
-              "x": "reinforcement_cost_per_mw",
-              "y": "capacity_mw"
+              "x": "cost_reinforcement_usd_per_mw",
+              "y": "capacity_ac_mw"
             }
           ],
           "style": {
@@ -398,20 +428,20 @@
     }
   ],
   "include_cols": [
-    "nrel_region",
-    "area_sq_km",
-    "capacity_mw",
+    "area_developable_sq_km",
+    "capacity_ac_mw",
     "country",
     "state",
     "latitude",
     "longitude",
-    "total_lcoe",
-    "lcot",
-    "eos_mult",
-    "reg_mult",
-    "trans_cap_cost_per_mw",
-    "reinforcement_cost_per_mw",
-    "mean_cf",
+    "lcoe_all_in_usd_per_mwh",
+    "lcot_usd_per_mwh",
+    "multiplier_cc_eos",
+    "multiplier_cc_regional",
+    "cost_spur_usd_per_mw",
+    "cost_poi_usd_per_mw",
+    "cost_reinforcement_usd_per_mw",
+    "capacity_factor_ac",
     "filename"
   ]
 }
